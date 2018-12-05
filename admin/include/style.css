@@ -1,0 +1,31 @@
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
+.alert{
+    color: #c7254e;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+.container{
+   height: 800px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   /*background-color: red;*/
+   /*color: white;*/
+   /*text-align: center;*/
+}

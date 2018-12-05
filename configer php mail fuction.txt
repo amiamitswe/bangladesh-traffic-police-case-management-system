@@ -1,0 +1,14 @@
+1st.
+go to php.ini file.
+then search for "mail_path"
+there set the link of phpsetmail exe file path
+and uncomment that
+then save
+
+2nd.
+go to sentmail.ini file
+there set smtp port to 587
+ten set
+auth_username= email id
+auth_password= email pass
+then save
