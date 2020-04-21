@@ -4,25 +4,25 @@
             <div class="col-md-12" style="margin-top: 20px">
                 <div class="col-md-3"></div>
                 <div class="col-md-2">
-                    <img src="images/logo.png" style="border-radius: 30%; width: 150px;">
+                    <img src="images/logo.png" class="admin-home-logo">
                 </div>
                 <div class="col-md-6">
-                    <h1 style="text-align: left; margin-top: 100px; color: blue;">Bangladesh Traffic Police</h1>
+                    <h1 class="admin-home-title">Bangladesh Traffic Police</h1>
                 </div>
                 <div class="col-md-1"></div>
             </div>
-<?php
-    $see_user_details = $db->see_user_details("traffic_police", $admin_user_id);
-    if($see_user_details->num_rows>0){
+    <?php
+        $see_user_details = $db->see_user_details("traffic_police", $admin_user_id);
+        if($see_user_details->num_rows>0){
         $row = $see_user_details->fetch_assoc();
         ?>
 
             <div class="col-md-2" style=""></div>
                 <div class="col-md-8">
-                    <div class="col-md-12">
-                        <hr>
-                        <marquee><h4 style="color: green">Bangladesh Traffic Police Case System Online &copy; 2018 == বাংলাদেশ ট্রাফিক পুলিশ কেচ সিস্টেম অনলাইন &copy; ২০১৮ </h4></marquee>
-                        <div class="col-md-6" style="background-color: darkseagreen; margin-top: 15px; margin-bottom: 30px;">
+                    <hr>
+                    <marquee><h4 style="color: green">Bangladesh Traffic Police Case System Online &copy; 2018 == বাংলাদেশ ট্রাফিক পুলিশ কেচ সিস্টেম অনলাইন &copy; ২০১৮ </h4></marquee>
+                    <div class="admin-home-content-details row">
+                        <div class="col-md-6" >
                             <h1 style="text-align: center;color: #2b669a">Your Information Details</h1>
                             <h3>User ID : <?php echo $admin_user_id;?></h3>
                             <h3>Police ID : <?php echo $row['police_id_no'];?></h3>
@@ -94,7 +94,7 @@
                                 $paid_taka = 0;
                             }
                         ?>
-                        <div class="col-md-6" style="background-color: darkseagreen; margin-top: 15px; margin-bottom: 30px;">
+                        <div class="col-md-6">
                             <h1 style="text-align: center;color: #2b669a">Your Case Details</h1>
                             <h3>Total Registered Case : <?php echo $count;?></h3>
                             <h3>Total Case Paid : <?php echo $paid_case;?></h3>
@@ -104,23 +104,19 @@
                             <h3>Total Paid Amount : <?php echo $paid_taka." Taka";?></h3>
                             <h3>Total Due : <?php echo ($received_taka - $paid_taka)." Taka";?></h3>
                         </div>
-                    </div>
-                    <br>
-                    <div class="col-md-12">
-                        <div class="well well-lg">
+                        </div>
+                        
+                        <div class="well well-lg admin-home-police-info row">
                             <h3 style="margin-top: 5px;">About Bangladesh Police</h3>
                             The Bangladesh Police (Bengali: বাংলাদেশ পুলিশ) is the main law enforcement agency of Bangladesh. It is administered under the Ministry of Home Affairs[4] of the Government of Bangladesh. It plays a crucial role in maintaining peace, and enforcement of law and order within Bangladesh. Though the police are primarily concerned with the maintenance of law and order and security of persons and property of individuals, they also play a big role in the criminal justice system.
                             <a href="https://en.wikipedia.org/wiki/Bangladesh_Police" target="_blank">Bangladesh Police Click Here</a>
                         </div>
                     </div>
-<div style="color: white;">B</div>
-                    <div style="color: white;">B</div>
-
-                </div>
-            <div class="col-md-2" style=""></div>
-        <?php
-    }
-?>
+                <br>
+  
+            <?php
+        }
+    ?>
     </div>
 </div>
 <?php require("admin_footer.php");?>

@@ -18,10 +18,14 @@
             padding: 0;
             background-color: yellow;
         }
+
+        .custom-nav {
+            border-radius: 0;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse" style="margin-bottom: auto; background-color: #122b40">
+    <nav class="navbar custom-nav navbar-inverse" style="margin-bottom: auto; background-color: #122b40">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

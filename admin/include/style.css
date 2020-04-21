@@ -1,31 +1,95 @@
-.error{
-    color: red;
+.custom-nav {
+  border-radius: 0;
 }
-.success{
-    color: green;
+.error {
+  color: red;
 }
-.alert{
-    color: #c7254e;
+.success {
+  color: green;
+}
+.alert {
+  color: #c7254e;
 }
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-    background-color: yellow;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  background-color: yellow;
 }
 
-.container{
-   height: 800px;
+.container {
+  height: 800px;
 }
 .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   /*background-color: red;*/
-   /*color: white;*/
-   /*text-align: center;*/
+  width: 100%;
+}
+.admin-home-content-details {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.admin-home-content-details > div {
+  background-color: darkseagreen;
+  border-radius: 10px;
+  box-shadow: 2px 5px 6px grey;
+  padding: 10px 25px;
+  width: 49.5%;
+}
+
+.admin-home-content-details > div:first-child {
+  margin-right: 10px;
+}
+
+.admin-home-police-info {
+  box-shadow: 0px 0px 10px grey;
+}
+
+.admin-home-logo {
+  width: 50%;
+}
+
+.admin-home-title {
+  text-align: left;
+  margin-top: 60px;
+  color: blue;
+}
+
+.footer-text {
+  text-align: center;
+  background-color: #808080;
+  padding: 10px;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .admin-home-logo {
+    border-radius: 30%;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .admin-home-title {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .admin-home-content-details > div {
+    width: 100%;
+  }
+
+  .admin-home-content-details > div:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .admin-home-content-details {
+    padding: 0 10px;
+  }
+
+  .admin-home-police-info {
+    margin: 0;
+  }
 }

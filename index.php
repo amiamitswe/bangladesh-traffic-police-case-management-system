@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <style>
         hr {
@@ -28,10 +26,22 @@
             background-image: url('searchicon.png');
             padding: 19px 40px 18px 10px;
         }
+
+        .custom-nav {
+        border-radius: 0;
+        }
+
+        .footer-style {
+            text-align: center;
+            background-color: gray;
+            padding: 10px;
+            color: #fff;
+        }
+
     </style>
 </head>
 <body onload="startTime()">
-<nav class="navbar navbar-inverse" style="margin-bottom: auto; background-color: #122b40">
+<nav class="navbar custom-nav navbar-inverse" style="margin-bottom: auto; background-color: #122b40">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -242,22 +252,20 @@
         </div>
     </div>
 
-
-
-
-
-
 </div>
-<!--Weather info-->
-<script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");
-</script>
-<script src="js_time/js_time.js"></script>
+
+
 
 <div>
-    <div style="text-align: center; background-color: gray;" class="well well-sm">Bangladesh Police &copy; 2018</div>
+    <div class="footer-style">Bangladesh Police &copy; 2018</div>
 </div>
 
+<!--Weather info-->
+<script src="custom-js/weather.js"></script>
+<script src="custom-js/js_time.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>

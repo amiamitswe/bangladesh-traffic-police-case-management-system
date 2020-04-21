@@ -1,9 +1,9 @@
 <?php
 class Admin_Database{
     private $db_host = "localhost";
-    private $db_user = "id5392896_btpc_user";
-    private $db_pass = "Amit1234";
-    private $db_name = "id5392896_btpc";
+    private $db_user = "root";
+    private $db_pass = "";
+    private $db_name = "traffic_v3.3";
     
     
     // private $db_host = "localhost";

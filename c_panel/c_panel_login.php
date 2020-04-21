@@ -20,8 +20,7 @@
                 header('Location:c_panel_home.php');
 
                 }
-        }
-        else{
+        } else{
             $error_msg = "Username or Password Doesn't Match !!!";
         }
     }
@@ -38,12 +37,16 @@
         <script src="../js/jquery.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
-        <script type="text/javascript" language="JavaScript" src="include/action.js">
+        <script type="text/javascript" language="JavaScript" src="include/action.js"></script>
 
-        </script>
+        <style>
+            .custom-nav {
+                border-radius: 0;
+            }
+        </style>
     </head>
     <body onload="startTime()">
-    <nav class="navbar navbar-inverse" style="margin-bottom: auto; background-color: #122b40">
+    <nav class="navbar custom-nav navbar-inverse" style="margin-bottom: auto; background-color: #122b40">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -93,10 +96,9 @@
         </div>
     <script src="../js_time/js_time.js"></script>
 
-    <div style="position: fixed; left: 0; bottom: 0; width: 100%; margin-bottom: -20px; "> 
-        <div style="text-align: center; background-color: gray;" class="well well-sm">Bangladesh Police &copy; 2018</div>
-    </div>
-
+    <?php
+        require ('c_panel_footer.php');
+    ?>
 
     </body>
 </html>

@@ -32,7 +32,7 @@ $admin_user_id = $_SESSION['user_id'];
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 </head>
 <body onload="startTime()">
-<nav class="navbar navbar-inverse" style="margin-bottom: auto; background-color: #122b40">
+<nav class="navbar navbar-inverse custom-nav" style="margin-bottom: auto; background-color: #122b40">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
